@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Information about Investment Live Private Backups, a personal-use encrypted backup tool." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'" />
+  <title>Investment Live Private Backups</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #20252a; background: #ffffff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.65; }
+    header, main, footer { max-width: 780px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid #dce1e5; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+    a { color: #17644b; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid #17644b; outline-offset: 4px; }
+    h1 { font-size: 30px; line-height: 1.25; margin: 12px 0 22px; overflow-wrap: anywhere; }
+    h2 { font-size: 20px; line-height: 1.4; margin: 28px 0 10px; }
+    p, ul, ol { margin: 12px 0; }
+    li { margin: 8px 0; }
+    .status { padding-left: 14px; border-left: 3px solid #a64a39; }
+    .muted, footer { color: #59636c; font-size: 14px; }
+    footer { border-top: 1px solid #dce1e5; }
+    @media (max-width: 480px) { header, main, footer { padding: 20px; } h1 { font-size: 27px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Information pages">
+      <a href="index.html" aria-current="page">Application</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Use Terms</a>
+    </nav>
+  </header>
+  <main>
+    <p class="muted">Personal-use application information</p>
+    <h1>Investment Live Private Backups</h1>
+    <p>A personal-use tool for keeping encrypted copies of the owner's investment-system database in the owner's private Google Drive storage.</p>
+    <p class="status">Production backup access is being prepared. This information website does not start a backup, offer a sign-in service, or give access to any investment data.</p>
+    <h2>Purpose and planned operation</h2>
+    <ol>
+      <li>An owner-authorized cloud workflow exports database data using a dedicated backup identity.</li>
+      <li>The workflow encrypts the export with an age public key and checks the encrypted file and its manifest.</li>
+      <li>After owner approval and acceptance testing, encrypted files and non-secret integrity manifests are stored in a private Drive destination.</li>
+    </ol>
+    <p>The decryption private key is retained by the owner outside the cloud backup runner. Database export and restore coverage have to be checked separately; this tool is not a complete backup of all cloud-platform services.</p>
+    <h2>Google Drive permission</h2>
+    <p>The application requests only the Google Drive <strong>drive.file</strong> permission. This permits access to files created by the application or explicitly selected for it by the owner, not unrestricted access to all Drive files.</p>
+    <p>The permission can allow reading, creating, updating, and deleting those authorized files. Backup retention cleanup is subject to separate backup-validity checks. The application does not request access to Gmail, contacts, or calendars.</p>
+    <h2>Owner control</h2>
+    <p>This is not a public backup service. Only the configured owner account is accepted by the enrollment helper. The owner controls authorization, the private storage destination, and whether production schedules are enabled.</p>
+    <p>Read the <a href="privacy.html">privacy notice</a> and <a href="terms.html">use terms</a> before authorizing the tool. Authorization can be revoked in the Google Account connections settings.</p>
+    <h2>Maintainer</h2>
+    <p>Maintained by <a href="https://github.com/lyxz0606" rel="noreferrer">lyxz0606 on GitHub</a>. Owner support contact information is shown on the Google authorization screen.</p>
+  </main>
+  <footer>Last updated: 2026-10-10. This site contains application information only.</footer>
+</body>
+</html>

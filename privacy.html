@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Privacy notice for Investment Live Private Backups." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'" />
+  <title>Privacy - Investment Live Private Backups</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #20252a; background: #ffffff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.65; }
+    header, main, footer { max-width: 780px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid #dce1e5; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+    a { color: #17644b; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid #17644b; outline-offset: 4px; }
+    h1 { font-size: 30px; line-height: 1.25; margin: 12px 0 22px; overflow-wrap: anywhere; }
+    h2 { font-size: 20px; line-height: 1.4; margin: 28px 0 10px; }
+    p, ul { margin: 12px 0; }
+    li { margin: 8px 0; }
+    .muted, footer { color: #59636c; font-size: 14px; }
+    footer { border-top: 1px solid #dce1e5; }
+    @media (max-width: 480px) { header, main, footer { padding: 20px; } h1 { font-size: 27px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Information pages">
+      <a href="index.html">Application</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Use Terms</a>
+    </nav>
+  </header>
+  <main>
+    <p class="muted">Investment Live Private Backups</p>
+    <h1>Privacy Notice</h1>
+    <p>This notice describes the personal-use backup tool and its planned production operation. Production authorization and backup acceptance are separate from publishing this notice.</p>
+    <h2>Data accessed and purpose</h2>
+    <ul>
+      <li>The owner's Google account email is checked through Drive account metadata to prevent enrollment of an unintended account.</li>
+      <li>Drive files and metadata accessible under <strong>drive.file</strong> are used only for owner-authorized backup storage, download verification, health checks, and retention management.</li>
+      <li>Encrypted backup contents and integrity manifests may contain personal financial data or metadata. They remain private and are not published on this website.</li>
+    </ul>
+    <p>The tool does not request unrestricted Drive access, Gmail access, contacts, or calendars. Google Drive market or investment data is not used to train models, for advertising, or for profiling.</p>
+    <h2>Storage and security</h2>
+    <p>OAuth enrollment credentials are held in the owner's protected local directory. When separately approved, only the credentials needed for cloud operation are configured in GitHub Secrets. OAuth access tokens are short-lived and must not be written to logs or public files.</p>
+    <p>Backups are encrypted before uploading to Google Drive. The age decryption private key is not stored in the cloud runner, GitHub Secrets, this public repository, or the backup Drive directory. Public encryption keys are not decryption keys.</p>
+    <p>Production backup temporary data requires restricted access and cleanup. No password, OAuth token, unencrypted export, private key, destination identifier, or backup implementation is published on this site.</p>
+    <h2>Sharing and service providers</h2>
+    <p>No Google user data is sold, shared for advertising, or provided to model services. Google processes the authorized Drive operations. GitHub provides the separately authorized cloud execution and secret storage. Access is restricted to the owner and the service providers needed to operate the backup.</p>
+    <p>Use of Google API data follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, including its applicable Limited Use requirements.</p>
+    <h2>Retention and removal</h2>
+    <p>The planned backup retention is 14 daily, 8 weekly, and 6 monthly recovery points. Automated deletion will not be enabled until separately accepted safeguards require a recent valid backup to remain. Retained backups can still contain historical data until the owner deletes or expires them.</p>
+    <p>The owner can remove application-accessible Drive files and revoke access in <a href="https://myaccount.google.com/connections" rel="noreferrer">Google Account connections</a>. Revocation stops future API access; it does not automatically delete existing encrypted backups or local credential files. Cloud credentials must also be removed to retire the tool.</p>
+    <h2>This information website</h2>
+    <p>The pages have no application analytics, tracking scripts, forms, account sign-in, or advertising. GitHub Pages, as the hosting provider, may record visitor network information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub Privacy Statement</a>.</p>
+    <h2>Contact and changes</h2>
+    <p>The maintainer is <a href="https://github.com/lyxz0606" rel="noreferrer">lyxz0606 on GitHub</a>. Owner support contact information is provided on the Google authorization screen. Material permission changes require new owner approval.</p>
+  </main>
+  <footer>Effective date: 2026-10-10. Application information only.</footer>
+</body>
+</html>

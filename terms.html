@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="Personal-use terms for Investment Live Private Backups." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; object-src 'none'" />
+  <title>Use Terms - Investment Live Private Backups</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #20252a; background: #ffffff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.65; }
+    header, main, footer { max-width: 780px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid #dce1e5; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+    a { color: #17644b; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid #17644b; outline-offset: 4px; }
+    h1 { font-size: 30px; line-height: 1.25; margin: 12px 0 22px; overflow-wrap: anywhere; }
+    h2 { font-size: 20px; line-height: 1.4; margin: 28px 0 10px; }
+    p, ul { margin: 12px 0; }
+    li { margin: 8px 0; }
+    .muted, footer { color: #59636c; font-size: 14px; }
+    footer { border-top: 1px solid #dce1e5; }
+    @media (max-width: 480px) { header, main, footer { padding: 20px; } h1 { font-size: 27px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Information pages">
+      <a href="index.html">Application</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html" aria-current="page">Use Terms</a>
+    </nav>
+  </header>
+  <main>
+    <p class="muted">Investment Live Private Backups</p>
+    <h1>Personal-use Terms</h1>
+    <p>This tool is maintained solely for the owner's private backup workflow. It is not a hosted backup service offered to other users. This page does not create an account, accept payment, or start any database operation.</p>
+    <h2>Authorization and scope</h2>
+    <p>Only the owner may authorize the configured Google account and private backup destination. Authorization is limited to the requested <strong>drive.file</strong> permission and may be revoked at any time. Publishing these pages is not authorization to export production data or enable daily backups.</p>
+    <p>Database exports must use the approved backup identity. A backup operation must not alter production investment positions, trades, or rules. Restoration is permitted only in an explicitly approved isolated environment, never against the current production database.</p>
+    <h2>Owner responsibilities</h2>
+    <ul>
+      <li>Keep the decryption private key and its offline recovery copy protected and outside cloud backup execution.</li>
+      <li>Review the actual export scope, encrypted-file integrity, storage results, and recovery tests before enabling production schedules.</li>
+      <li>Monitor free-service limits, OAuth authorization health, storage capacity, and backup freshness.</li>
+      <li>Do not put credentials or unencrypted exports in public repositories, workflow logs, or this information site.</li>
+    </ul>
+    <h2>Limitations</h2>
+    <p>A database logical backup is not a complete backup of the entire cloud platform. Storage object files, deployed functions, website deployments, and secret configuration can require separate recovery arrangements.</p>
+    <p>Free cloud services and schedules can fail or be delayed. Encryption cannot compensate for a lost private key or an incomplete export. A successful workflow run alone does not prove that a restorable cloud backup exists.</p>
+    <p>No uninterrupted service, data recovery, investment outcome, or financial return is guaranteed. The tool does not provide trading advice or place orders. Third-party services remain subject to their own applicable policies.</p>
+    <h2>Changes and retirement</h2>
+    <p>Permission changes, production activation, and destructive retention changes require explicit owner approval. Retiring the tool includes disabling its schedules, removing cloud credentials, revoking Google access, and separately deciding what retained backups to keep.</p>
+    <p>See the <a href="privacy.html">privacy notice</a> for data handling and revocation details. The maintainer is <a href="https://github.com/lyxz0606" rel="noreferrer">lyxz0606 on GitHub</a>.</p>
+  </main>
+  <footer>Effective date: 2026-10-10. Application information only.</footer>
+</body>
+</html>
